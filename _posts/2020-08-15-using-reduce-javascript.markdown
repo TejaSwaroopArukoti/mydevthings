@@ -15,7 +15,7 @@ let sum = numbers.reduce( (a,b)=> (a+b));
 console.log(sum)
 {% endhighlight %}
 
-Check out the [MDNDOCS][MDN Documentation] for more info.
+Check out the [MDN Docs][MDNDOCS] for more info.
 
 [MDNDOCS]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
 
