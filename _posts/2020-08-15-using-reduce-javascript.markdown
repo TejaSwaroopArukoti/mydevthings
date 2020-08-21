@@ -5,9 +5,9 @@ date:   2020-08-16 00:43:32 +0530
 categories: javascript
 ---
 
-Recently, I did find a magic function in javascript i.e reduce.
+Recently, I found a magic function in javascript i.e reduce().
 
-Let me explain with example.
+ Let me explain with an example
 
 {% highlight ruby %}
 let numbers = [25,37,40,4];
@@ -15,31 +15,31 @@ let sum = numbers.reduce( (accumulatedValue, currentValue) => (accumulatedValue 
 console.log(sum);
 {% endhighlight %}
 
-`reduce` is prototype method on Array class.   
+`reduce()` is prototype method on Array class.   
 It takes callback function as first parameter.   
 Callback function will be called for each value in the array.  
 Callback function will receive two parameters - `accumulatedValue`, `currentValue`. 
-The return value of function will be stored in `accumulatedValue`. So, Let us understand by our example
+The return value of function will be stored in `accumulatedValue`. 
 
-### First iteration 
-before executing reduce - `currentValue` = 25, `accumulatedValue` = 0
-operation -   `currentValue` + `accumulatedValue` = 25 + 0 = 25.
-The result will be stored in `accumulatedValue`. So, `accumulatedValue` is holding value 25.
+#### First iteration 
+Before executing reduce - `currentValue` = 25, `accumulatedValue` = 0   
+Operation -   `currentValue` + `accumulatedValue` = 25 + 0 = 25  
+The result will be stored in `accumulatedValue`. So, `accumulatedValue` is holding value 25.    
 
-### Second iteration 
-before executing reduce - `currentValue` = 37, `accumlatedValue` = 25
-after execting reduce - `accumulatedValue` = `currentValue` + `accumulatedValue` = 37 + 25 = 62
+#### Second iteration     
+Before executing reduce - `currentValue` = 37, `accumulatedValue` = 25     
+After executing reduce - `accumulatedValue` = `currentValue` + `accumulatedValue` = 37 + 25 = 62   
 
 
-### Third iteration 
-before executing reduce - `currentValue` = 40, `accumlatedValue` = 62
-after execting reduce - `accumulatedValue` = `currentValue` + `accumulatedValue` = 40 + 62 = 102
+#### Third iteration    
+Before executing reduce - `currentValue` = 40, `accumulatedValue` = 62    
+After executing reduce - `accumulatedValue` = `currentValue` + `accumulatedValue` = 40 + 62 = 102    
 
-### Fourth iteration 
-before executing reduce - `currentValue` = 4, `accumlatedValue` = 102
-after execting reduce - `accumulatedValue` = `currentValue` + `accumulatedValue` = 4 + 102 = 106.
+#### Fourth iteration    
+Before executing reduce - `currentValue` = 4, `accumulatedValue` = 102    
+After executing reduce - `accumulatedValue` = `currentValue` + `accumulatedValue` = 4 + 102 = 106.    
 
-Final accumulated value will returned. Here, 106 will be returned.
+Final accumulated value will be returned. Here, 106 will be returned.
 
 Check out the [MDN Docs][MDNDOCS] for more info.
 
