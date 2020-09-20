@@ -22,9 +22,9 @@ Callback function will receive two parameters - `accumulatedValue`, `currentValu
 The return value of function will be stored in `accumulatedValue`. 
 
 #### First iteration 
-Before executing reduce - `currentValue` = 25, `accumulatedValue` = 0       
-Operation -   `currentValue` + `accumulatedValue` = 25 + 0 = 25  
-The result will be stored in `accumulatedValue`. So, `accumulatedValue` is holding value 25.    
+We didn't pass the second parameter (`initialValue` which is optional.)
+So, first value from array will be taken as `accumulatedValue` and first iteration is skipped. 
+`accumulatedValue` = 25.
 
 #### Second iteration     
 Before executing reduce - `currentValue` = 37, `accumulatedValue` = 25         
